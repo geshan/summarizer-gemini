@@ -1,0 +1,24 @@
+{
+  "name": "summarizer-gemini",
+  "version": "1.0.0",
+  "description": "An example repository to use Google Gemini API to summarize text",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geshan/summarizer-gemini.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geshan/summarizer-gemini/issues"
+  },
+  "homepage": "https://github.com/geshan/summarizer-gemini#readme",
+  "dependencies": {
+    "@geshan/axrio": "^1.0.1",
+    "@google-cloud/vertexai": "^0.4.0"
+  }
+}
