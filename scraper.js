@@ -2,7 +2,8 @@ const axrio = require('@geshan/axrio');
 
 async function getContents(url) {
   try {
-    const $ = await axrio.getPage(url);
+    const timeoutInMs = 2000;
+    const $ = await axrio.getPage(url, 2000);
 
     const bodyContents = $('body').contents().toArray()
       .map(element => element.type === 'tag' ? $(element).text().trim() + ' ' : '')
