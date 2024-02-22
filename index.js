@@ -14,6 +14,11 @@ app.get('/summary', async (req, res) => {
   console.log(`req url`, req.query?.url);
 
   const url = req.query?.url || 'https://7news.com.au/news/travellers-arriving-in-nsw-urged-to-check-luggage-for-unwanted-stowaway-c-13642953';
+  try {
+    new URL(url); //validates if given string is a valid URL
+  } catch (err) {
+    return res.status(400).json({message: `provider URL ${url} is not a valid URL`});
+  }
   console.log(`Getting summary for url: ${url} \n`);
   const pageContents = await scraper.getContents(url);
   if (pageContents.length === 0) {
