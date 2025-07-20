@@ -2,6 +2,8 @@
 
 An example repository to use Google Gemini API to summarize text. Google Cloud credits are provided for this project, thanks GCP :).
 
+AI generated docs by DeepWiki can be found [here](https://deepwiki.com/geshan/summarizer-gemini/1-overview)
+
 ## How to use
 
 There are two ways to run this demo app, one as a CLI to quickly test and another one as an API.
